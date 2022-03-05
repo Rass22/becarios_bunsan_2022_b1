@@ -1,11 +1,13 @@
 defmodule WordCount do
   def count() do
-    {:ok, text} = File.read("./Escritorio/Bunsan-Elixir/hola.txt")
-    text1=String.split(text)
-    Enum.frequencies(text1)
+    {:ok, text} = File.read("./Escritorio/Bunsan-Elixir/hola.txt") #read the file xd
+    text=String.replace(text,"á","a") #replace the word with the accent
+    text1=String.split(text) #Can split a string into multiple strings given a patterns (can be a list for example)
+
+    Enum.frequencies(text1) # Return a map with keys as unique element of enumerable and values as the count of every element
 
   end
 
 end
 
-WordCount.count("./Escritorio/Bunsan-Elixir/hola.txt")
+WordCount.count()
