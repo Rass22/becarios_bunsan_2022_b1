@@ -7,7 +7,6 @@ defmodule WordCount do
     Enum.frequencies(text1) # Return a map with keys as unique element of enumerable and values as the count of every element
 
   end
-
 end
 
 WordCount.count()
