@@ -58,7 +58,15 @@ defmodule MetroCDMXChallenge do
       end)
     end)
   end
-
-
-
 end
+
+
+
+#cd ./Escritorio/becarios_bunsan_2022_b1
+#iex -S mix
+# r MetroCDMXChallenge
+#MetroCDMXChallenge.metro_lineas() (antes usaba este)
+
+#MetroCDMXChallenge.metro_lineas("./lib/Metro_CDMX.xml") (ahora se usa este para ejecutarlo)
+#MetroCDMXChallenge.metro_graph("./lib/Metro_CDMX.xml") (con este se ejecuta el graph)
+
