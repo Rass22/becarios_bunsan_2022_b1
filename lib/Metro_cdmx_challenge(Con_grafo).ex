@@ -11,13 +11,6 @@ defmodule MetroCDMXChallenge do
 
 
 
-  @spec metro_lineas(
-          binary
-          | maybe_improper_list(
-              binary | maybe_improper_list(any, binary | []) | char,
-              binary | []
-            )
-        ) :: list
   def metro_lineas(xmlpath) do
     xmldoc = File.read!(xmlpath)
     #coordenada que tiene las lineas
